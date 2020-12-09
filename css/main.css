@@ -1,1 +1,55 @@
+ body {
+ 	padding-bottom: 0px;
+ }
 
+a, a:hover {
+    color: #d32370;
+}
+
+
+ /* SCROLLBAR */
+    /* Let's get this party started */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #e8dae1;
+        /*border: 4px solid transparent;*/
+        background-clip: content-box;   /* THIS IS IMPORTANT */
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #ad1457;
+        border-radius: 5px;
+    }
+
+
+.alert-box {
+  width: 400px;
+  background: #444;
+  color: white;
+  position: fixed;
+  font-weight: bold;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  padding: 15px;
+  font-size: 15px;
+  text-transform: capitalize;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 300ms;
+}
+
+.alert-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.alert-warning {
+    color: firebrick;
+    background-color: navajowhite;
+    border-color: #faebcc;
+}
